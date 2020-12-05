@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MenuItem.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,8 @@
 @implementation AppDelegate
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification {
-    [self createMenu];
+    MenuItem *menuItem = [[MenuItem alloc] init];
+    [menuItem createMenu];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
@@ -35,26 +37,6 @@
     activeWindow.title = @"Outliner";
     [activeWindow makeKeyAndOrderFront:NSApp];
 }
-
--(void)createMenu {
-    NSMenu *menubar = [[NSMenu alloc] init];
-    NSMenuItem *firstMenu = [[NSMenuItem alloc] init];
-    [menubar addItem:firstMenu];
-    [NSApp setMainMenu:menubar];
-    NSMenu *firstSubmenu = [[NSMenu alloc] init];
-
-    NSMenuItem *aboutMenuItem = [[NSMenuItem alloc] initWithTitle:@"About Outliner"
-                                                           action:NULL
-                                                    keyEquivalent:@""];
-    NSMenuItem *quitMenuItem = [[NSMenuItem alloc] initWithTitle:@"Quit Outliner"
-                                                          action:@selector(terminate:)
-                                                   keyEquivalent:@"q"];
-
-    [firstSubmenu addItem:aboutMenuItem];
-    [firstSubmenu addItem:quitMenuItem];
-
-    [firstMenu setSubmenu:firstSubmenu];
- }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application

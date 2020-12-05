@@ -11,6 +11,7 @@
 		EA7C50D5257259DB00BC1050 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7C50D4257259DB00BC1050 /* ViewController.m */; };
 		EA7C50D7257259DD00BC1050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA7C50D6257259DD00BC1050 /* Assets.xcassets */; };
 		EA7C50DD257259DD00BC1050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7C50DC257259DD00BC1050 /* main.m */; };
+		EAD34F65257BFD30003A3A56 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD34F64257BFD30003A3A56 /* MenuItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		EA7C50DB257259DD00BC1050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA7C50DC257259DD00BC1050 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA7C50DE257259DD00BC1050 /* Outliner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Outliner.entitlements; sourceTree = "<group>"; };
+		EAD34F63257BFD30003A3A56 /* MenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
+		EAD34F64257BFD30003A3A56 /* MenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,8 @@
 				EA7C50D1257259DB00BC1050 /* AppDelegate.m */,
 				EA7C50D3257259DB00BC1050 /* ViewController.h */,
 				EA7C50D4257259DB00BC1050 /* ViewController.m */,
+				EAD34F63257BFD30003A3A56 /* MenuItem.h */,
+				EAD34F64257BFD30003A3A56 /* MenuItem.m */,
 				EA7C50D6257259DD00BC1050 /* Assets.xcassets */,
 				EA7C50DB257259DD00BC1050 /* Info.plist */,
 				EA7C50DC257259DD00BC1050 /* main.m */,
@@ -135,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7C50D5257259DB00BC1050 /* ViewController.m in Sources */,
+				EAD34F65257BFD30003A3A56 /* MenuItem.m in Sources */,
 				EA7C50DD257259DD00BC1050 /* main.m in Sources */,
 				EA7C50D2257259DB00BC1050 /* AppDelegate.m in Sources */,
 			);
