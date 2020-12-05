@@ -15,12 +15,11 @@
 
 @implementation AppDelegate
 
+- (void)applicationWillFinishLaunching:(NSNotification *)notification {
+    [self createMenu];
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
-    
-    // A little help from this site: https://medium.com/@MalikAlayli/create-a-macos-app-without-a-main-storyboard-81f4ee8be1d
-    // Eventhough that uses Swift
-    
     NSSize windowSize = NSMakeSize(480, 480);
     NSRect screenSize = NSScreen.mainScreen.frame;
     NSRect rect = NSMakeRect(screenSize.size.width/2 - windowSize.width/2, screenSize.size.height/2 - windowSize.height/2, windowSize.width, windowSize.height);
@@ -37,6 +36,25 @@
     [activeWindow makeKeyAndOrderFront:NSApp];
 }
 
+-(void)createMenu {
+    NSMenu *menubar = [[NSMenu alloc] init];
+    NSMenuItem *firstMenu = [[NSMenuItem alloc] init];
+    [menubar addItem:firstMenu];
+    [NSApp setMainMenu:menubar];
+    NSMenu *firstSubmenu = [[NSMenu alloc] init];
+
+    NSMenuItem *aboutMenuItem = [[NSMenuItem alloc] initWithTitle:@"About Outliner"
+                                                           action:NULL
+                                                    keyEquivalent:@""];
+    NSMenuItem *quitMenuItem = [[NSMenuItem alloc] initWithTitle:@"Quit Outliner"
+                                                          action:@selector(terminate:)
+                                                   keyEquivalent:@"q"];
+
+    [firstSubmenu addItem:aboutMenuItem];
+    [firstSubmenu addItem:quitMenuItem];
+
+    [firstMenu setSubmenu:firstSubmenu];
+ }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
