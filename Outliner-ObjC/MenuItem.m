@@ -1,6 +1,6 @@
 //
 //  MenuItem.m
-//  Outliner
+//  Outliner-ObjC
 //
 //  Created by Yohanes Bandung on 06/12/20.
 //
@@ -25,13 +25,13 @@
     NSMenuItem *firstMenu = [[NSMenuItem alloc] init];
     NSMenu *firstSubmenu = [[NSMenu alloc] init];
 
-    NSMenuItem *aboutMenuItem = [[NSMenuItem alloc] initWithTitle:@"About Outliner"
+    NSMenuItem *aboutMenuItem = [[NSMenuItem alloc] initWithTitle:@"About Outliner-ObjC"
                                                            action:NULL
                                                     keyEquivalent:@""];
     NSMenuItem *preferencesMenuItem = [[NSMenuItem alloc] initWithTitle:@"Preferences..."
                                                                  action:NULL
                                                           keyEquivalent:@","];
-    NSMenuItem *quitMenuItem = [[NSMenuItem alloc] initWithTitle:@"Quit Outliner"
+    NSMenuItem *quitMenuItem = [[NSMenuItem alloc] initWithTitle:@"Quit Outliner-ObjC"
                                                           action:@selector(terminate:)
                                                    keyEquivalent:@"q"];
 

@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  Outliner
+//  Outliner-ObjC
 //
 //  Created by Yohanes Bandung on 28/11/20.
 //

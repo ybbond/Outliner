@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  Outliner
+//  Outliner-ObjC
 //
 //  Created by Yohanes Bandung on 28/11/20.
 //
@@ -33,8 +33,17 @@
                              styleMask:styleMask
                                backing:backing
                                  defer:NO];
+
+    NSRect frame = NSMakeRect(5, 5, 200, 100);
+    NSTextField *textField = [[NSTextField alloc] initWithFrame:frame];
+    [textField setPlaceholderString:@"Write here..."];
+    textField.lineBreakMode = NSLineBreakByWordWrapping;
+    textField.bezeled = YES;
+    textField.bezelStyle = NSBezelBorder;
+
+    [[[activeWindow contentView] superview] addSubview:textField];
     
-    activeWindow.title = @"Outliner";
+    activeWindow.title = @"Outliner-ObjC";
     [activeWindow makeKeyAndOrderFront:NSApp];
 }
 

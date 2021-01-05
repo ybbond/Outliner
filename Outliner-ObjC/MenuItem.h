@@ -1,6 +1,6 @@
 //
 //  MenuItem.h
-//  Outliner
+//  Outliner-ObjC
 //
 //  Created by Yohanes Bandung on 06/12/20.
 //
